@@ -332,6 +332,7 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
   id: GenericJug
+  suffix: Empty
   name: Jug
   description: A nondescript plastic jug to store liquids
   components:
@@ -339,10 +340,14 @@
     solutions:
       drink:
         maxVol: 400
-        # reagents:
-        # - ReagentId: GreenTea
-        #   Quantity: 300
-  # - type: Label
-  #   currentLabel: reagent-name-green-tea
   - type: Sprite
     sprite: Objects/Consumable/Drinks/generic_jug.rsi
+
+- type: entity
+  parent: GenericJug
+  id: ArmoredJug
+  name: Armored Jug
+  description: A armored plastic jug to safely store liquids
+  components:
+  - type: ExplosionResistance
+    damageCoefficient: 0.0
