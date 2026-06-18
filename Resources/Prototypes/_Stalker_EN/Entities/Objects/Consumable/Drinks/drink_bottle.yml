@@ -328,3 +328,21 @@
     keepFirst: true
     exactFirst: false
     time: 3
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  id: GenericJug
+  name: Jug
+  description: A nondescript plastic jug to store liquids
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 400
+        # reagents:
+        # - ReagentId: GreenTea
+        #   Quantity: 300
+  # - type: Label
+  #   currentLabel: reagent-name-green-tea
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/generic_jug.rsi
